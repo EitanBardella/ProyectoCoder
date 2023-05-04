@@ -262,22 +262,24 @@ label{
 
 /*COMIC y MANGA*/ 
 
-.mangas{
+/*Vamos a aplicar un carrusel*/
+
+/* .mangas{
     margin-top: 20px;
     margin-bottom: 20px;
-    /* display: flex;
-    justify-content: space-evenly; */
-}
+    display: flex;
+    justify-content: space-evenly;
+} */
 
 /* .tomosmanga{
     display: flex;
     justify-content: space-evenly;
 } */
 
-.comics{
+/* .comics{
     margin-top: 20px;
     margin-bottom: 20px;
-}
+} */
 
 /*Merchandaising*/
 
