@@ -79,15 +79,21 @@ button:hover{
 }
 
 
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 480px) {
     header{
-        width: 100%;
+        width: 480px;
     }
 }
 
-@media screen and (min-width: 740px){
-    .header{
-        width: 50%;
+/* @media screen and (max-width: 400px) {
+    header{
+        width: 400px;
+    }
+} */
+
+@media screen and (max-width: 319px) {
+    header{
+        width: 319px;
     }
 }
 
@@ -258,15 +264,51 @@ label{
 .contenedor{
     background-color: #C4D7E6;
     text-align: center;
+    height: 80vh;
+}
+
+@media screen and (max-width: 480px) {
+    .contenedor{
+        width: 480px;
+        height: 80vh;
+    }
+}
+
+/* @media screen and (max-width: 400px) {
+    .contenedor{
+        width: 400px;
+        height: 80vh;
+    }
+} */
+
+@media screen and (max-width: 319px) {
+    .contenedor{
+        width: 319px;
+        height: 100%;
+    }
 }
 
 /*COMIC y MANGA*/ 
 
-/*Vamos a aplicar un carrusel*/
+/*Centrar El karrusel*/
 
 .Karrusel-tamaño{
     width: 500px;
     height: 700px;
+    /* display: flex;
+    justify-content: center; */
+}
+
+@media screen and (max-width:480px) {
+    .Karrusel-tamaño{
+        width: 480px;
+    }
+}
+
+@media screen and (max-width:319px) {
+    .Karrusel-tamaño{
+        width: 319px;
+    }
 }
 
 .slide{
@@ -279,11 +321,6 @@ label{
 
 /*Merchandaising*/
 
-#Funko{
-    width: 228px;
-    height: 291px;
-    margin-left: 20px;
-}
 
 
 
@@ -297,6 +334,27 @@ height: 10vh;
 /* display: flex; */
 }
 
+@media screen and (max-width: 480px) {
+    footer{
+        width: 480px;
+        height: 10vh;
+    }
+}
+
+/* @media screen and (max-width: 400px) {
+    footer{
+        width: 400px;
+    }
+} */
+
+@media screen and (max-width: 319px) {
+    footer{
+        width: 319px;
+        height: 10vh;
+        position: absolute
+    }
+}
+
 .pie{
     display: flex;
     justify-content: space-around;
@@ -307,6 +365,7 @@ height: 10vh;
 p{
     font-size: 15px;
 }
+
 
 .logo{
     /* display: flex; */
