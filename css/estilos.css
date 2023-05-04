@@ -14,7 +14,7 @@ header{
     /* padding: 30px 10%; */
     height: 10vh;
     /*Cuando agrego el witdht deja de ser responsive , pero cuando lo sacó es responsive solo hasta 1146px y cuando declaro las media querys no me funcionan y no encuentro ni entiendo el porque no funcionan, probe intentando cambiar el color de fondo para ver si funcionaban y nada */
-    /* width: 1880px; */
+    width: 1880px;
 }
 
 .li{
@@ -79,9 +79,9 @@ button:hover{
 }
 
 
-@media screen and (max-width: 900px){
-    .header{
-        background-color: aqua;
+@media screen and (max-width: 1100px){
+    header{
+        width: 100%;
     }
 }
 
