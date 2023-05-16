@@ -266,38 +266,32 @@ footer {
   /* width: 1880px; */
   /* display: flex; */
 }
-
-.pie {
+footer .pie {
   display: flex;
   justify-content: space-around;
   /* padding: 15px; */
   align-items: center;
 }
-
-p {
-  font-size: 15px;
-}
-
-.logo {
+footer .logo {
   /* display: flex; */
   /* align-items: center; */
   /* gap: 10px; */
   height: 7vh;
 }
-
-.logotipo {
+footer .logotipo {
   font-size: 25px;
   font-weight: 400;
   color: white;
   text-align: center;
   font-family: "Bruno Ace SC", cursive;
 }
-
-span {
+footer p {
+  font-size: 15px;
+}
+footer span {
   font-size: 30px;
 }
-
-i {
+footer i {
   text-decoration: none;
   color: white;
   margin: px;
@@ -305,60 +299,52 @@ i {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
   transition: 0.3 ease;
 }
-
-.fa-youtube {
+footer .fa-youtube {
   background-color: red;
   padding: 2px;
   border-radius: 10px;
   color: white;
 }
-
-.fa-youtube:hover {
+footer .fa-youtube:hover {
   background-color: red;
   color: white;
   box-shadow: 0 0 15px red;
   box-shadow: 0 0 45px red;
   box-shadow: 0 0 75px red;
 }
-
-.fa-instagram {
+footer .fa-instagram {
   background-color: rgb(189, 42, 91);
   padding: 2px;
   border-radius: 10px;
   color: white;
 }
-
-.fa-instagram:hover {
+footer .fa-instagram:hover {
   background-color: rgb(217, 44, 154);
   color: white;
   box-shadow: 0 0 15px rgb(217, 44, 154);
   box-shadow: 0 0 45px rgb(217, 44, 154);
   box-shadow: 0 0 75px rgb(217, 44, 154);
 }
-
-.fa-whatsapp {
+footer .fa-whatsapp {
   background-color: rgb(37, 187, 37);
   padding: 2px;
   border-radius: 10px;
   color: white;
 }
-
-.fa-whatsapp:hover {
+footer .fa-whatsapp:hover {
   background-color: rgb(53, 214, 39);
   color: white;
   box-shadow: 0 0 15px rgb(53, 214, 39);
   box-shadow: 0 0 45px rgb(53, 214, 39);
   box-shadow: 0 0 75px rgb(53, 214, 39);
 }
-
-.fa-linkedin {
+footer .fa-linkedin {
   background-color: rgb(43, 97, 184);
   padding: 2px;
   border-radius: 10px;
   color: white;
 }
-
-.fa-linkedin:hover {
+footer .fa-linkedin:hover {
   background-color: rgb(28, 70, 177);
   color: white;
   box-shadow: 0 0 15px rgb(28, 70, 177);
