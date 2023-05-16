@@ -17,21 +17,7 @@ header{
     width: 100%;
     /*Cuando agrego el witdht deja de ser responsive , pero cuando lo sacó es responsive solo hasta 1146px y cuando declaro las media querys no me funcionan y no encuentro ni entiendo el porque no funcionan, probe intentando cambiar el color de fondo para ver si funcionaban y nada */
 
-    .logo{
-        cursor: pointer;
-    }
 
-    .nav_links{
-        list-style: none;
-    }
-
-    .nav_links li{
-        display: inline-block;
-        padding: 0 20px;
-    }
-    .nav_links li a:hover{
-        color: #0088a9;
-    }
     .li{
         font-family: "Montserrat";
         font-family: sans-serif;
@@ -47,6 +33,21 @@ header{
         font-size: 16px;
         color: #edf0f1;
         text-decoration: none;
+    }
+    .logo{
+        cursor: pointer;
+    }
+
+    .nav_links{
+        list-style: none;
+    }
+
+    .nav_links li{
+        display: inline-block;
+        padding: 0 20px;
+    }
+    .nav_links li a:hover{
+        color: #0088a9;
     }
     .cta{
         font-family: "Montserrat";
@@ -88,6 +89,7 @@ header{
 
 
 
+
 .cont-1{
     background-color: #9aadbf;
     /* height: 80vh; */
@@ -108,7 +110,16 @@ header{
     align-content: space-evenly; */
     place-content: space-evenly space-evenly;
     place-items: center center;
+    img{
+        height: 354px;
+        width: 230px;
+    }
+    img{
+        height: 354px;
+        width: 230px;
+    }
 }
+
 
 /*Agregar titulo de Novedades*/
 
@@ -125,20 +136,7 @@ header{
     padding: 10px 10px;
 } */
 
-img{
-    height: 354px;
-    width: 230px;
-}
 
-.img{
-    box-sizing: border-box;
-    background-color: white;
-    border: solid 3px whitesmoke;
-    border-radius: 3px;
-    height: 360px;
-    width: 236px;
-
-}
 
 
 
@@ -147,8 +145,8 @@ img{
 .contact{
     background-color: #ffffff;
     height: 80vh;
-    width: 100%;
-    max-width: 1100px;
+    width: 1150px;
+    // max-width: 1100px;
     margin: auto;
     font-family:Georgia, 'Times New Roman', Times, serif;
 
@@ -158,84 +156,70 @@ img{
     padding-top: 150px;
     border-left:solid 3px black;
     border-right:solid 3px black;
+    h2{
+        text-align: center;
+        font-size: 33px;
+    }
+    p{
+        padding: 10px;
+        margin:10px 10px;
+        font-size: 22px;
+        font-weight: 400;
+        font-family: "Montserrat";
+        font-family: sans-serif;
+        line-height: 1.2;
+    }
+    a{
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 400;
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 15px;
+        color: black;
+        margin-left: 22px;
+    }
+    a i{
+        color: red;
+        font-size: 20px;
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+    form .campo, textarea{
+        width: 100%;
+        height: 30px;
+        padding: 15 10px;
+        margin-bottom: 20px;
+        font-size: 15px;
+        font-weight: 400;
+        border: solid 1px black;
+        border-radius: 3px;
+        outline: 0px;
+    }
+    .btn-enviar{
+        background-color: rgb(245, 131, 2);
+        padding: 10px;
+        font-size: 16px;
+        border: solid 1px rgb(51, 47, 47);
+        border-radius: 3px;
+        outline: 0px;
+        cursor: pointer;
+        transition: all 300ms ease;
+    }
+    .btn-enviar:hover{
+        background-color:  rgb(245, 131, 2);
+        color: white;
+        box-shadow: 0 0 15px  rgb(245, 131, 2);
+        box-shadow: 0 0 25px  rgb(245, 131, 2);
+    }
+    label{
+        color: black;
+        font-size: 22px;
+        font-weight: 700;
+    }
 }
 
-.contact h2{
-    text-align: center;
-    font-size: 33px;
-}
 
-.contact p{
-    padding: 10px;
-    margin:10px 10px;
-    font-size: 22px;
-    font-weight: 400;
-    font-family: "Montserrat";
-    font-family: sans-serif;
-    line-height: 1.2;
-}
-
-.contact a{
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 400;
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 15px;
-    color: black;
-    margin-left: 22px;
-}
-
-
-.contact a i{
-    color: red;
-    font-size: 20px;
-    margin-right: 10px;
-    margin-left: 5px;
-}
-
-.contact form .campo, textarea{
-    width: 100%;
-    height: 30px;
-    padding: 15 10px;
-    margin-bottom: 20px;
-    font-size: 15px;
-    font-weight: 400;
-    border: solid 1px black;
-    border-radius: 3px;
-    outline: 0px;
-}
-
-.contact form textarea{
-    max-width: 530px;
-    min-width: 530px;
-    max-height: 150px;
-    min-height: 140px;
-}
-
-.contact .btn-enviar{
-    background-color: rgb(245, 131, 2);
-    padding: 10px;
-    font-size: 16px;
-    border: solid 1px rgb(51, 47, 47);
-    border-radius: 3px;
-    outline: 0px;
-    cursor: pointer;
-    transition: all 300ms ease;
-}
-
-.btn-enviar:hover{
-    background-color:  rgb(245, 131, 2);
-    color: white;
-    box-shadow: 0 0 15px  rgb(245, 131, 2);
-    box-shadow: 0 0 25px  rgb(245, 131, 2);
-}
-
-label{
-    color: black;
-    font-size: 22px;
-    font-weight: 700;
-}
 
 
 /*FAQ*/
@@ -246,27 +230,22 @@ label{
     /* height: 80vh; Agregar h min*/
     min-height: 800px;
     width: 100%;
+    h2{
+        padding: 20px;
+        text-align: center;
+    }
+    .faq{
+        padding: 20px;
+    }
+    button{
+        padding: 10px 10px;
+        background-color: rgb(68, 188, 218);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        width: 200px;
+    }
 }
-
-
-.contenedor h2{
-    padding: 20px;
-    text-align: center;
-}
-
-.faq{
-    padding: 20px;
-}
-
-.faq button{
-    padding: 10px 10px;
-    background-color: rgb(68, 188, 218);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    width: 200px;
-}
-
 
 
 /*COMIC y MANGA*/
@@ -279,17 +258,17 @@ label{
     /* display: flex;
     justify-content: center;
     align-items: center; */
+    .slide{
+        margin-top: 50px;
+    }
+    img{
+        height: 65vh;
+    }
+    a{
+        text-decoration: none;
+    }
 }
 
-
-
-.slide{
-    margin-top: 50px;
-}
-
-.slide img{
-    height: 65vh;
-}
 
 /*Merchandaising*/
 
@@ -417,6 +396,12 @@ footer{
         grid-template-columns: repeat(2, 200px);
     }
     
+    .contact{
+        place-content: space-evenly space-evenly;
+        place-items: center center;
+        grid-template-columns: repeat(2, 200px);
+    }
+
     footer{
         width: 1150px;
     }
