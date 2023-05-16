@@ -1,0 +1,399 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*HEADER*/
+header {
+  background-color: #24252a;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* padding: 30px 10%; */
+  /* height: 10vh; */
+  height: 150px;
+  width: 100%;
+  /*Cuando agrego el witdht deja de ser responsive , pero cuando lo sacó es responsive solo hasta 1146px y cuando declaro las media querys no me funcionan y no encuentro ni entiendo el porque no funcionan, probe intentando cambiar el color de fondo para ver si funcionaban y nada */
+}
+header .logo {
+  cursor: pointer;
+}
+header .nav_links {
+  list-style: none;
+}
+header .nav_links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+header .nav_links li a:hover {
+  color: #0088a9;
+}
+header .li {
+  font-family: "Montserrat";
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+header .avegacion {
+  font-family: "Montserrat";
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+header .cta {
+  font-family: "Montserrat";
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+header button {
+  padding: 9px 25px;
+  background-color: rgb(0, 136, 169);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+header button:hover {
+  background-color: rgb(0, 136, 169);
+}
+
+/*HOME*/
+.homecm {
+  background-color: aliceblue;
+}
+
+.cont-1 {
+  background-color: #9aadbf;
+  /* height: 80vh; */
+  /* border-bottom: solid 5px black; */
+  border-right: solid 5px black;
+  border-left: solid 5px black;
+  /* height: 80vh; */
+  width: 1150px;
+  margin: auto;
+  padding: 20px 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 80px 30px;
+  /* justify-content: space-evenly;
+  align-content: space-evenly; */
+  place-content: space-evenly space-evenly;
+  place-items: center center;
+}
+
+/*Agregar titulo de Novedades*/
+/* .cont-1 .h2{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    font-size: 80px;
+    color: white;
+
+} */
+/* .h2{
+    background-color: black;
+    padding: 10px 10px;
+} */
+img {
+  height: 354px;
+  width: 230px;
+}
+
+.img {
+  box-sizing: border-box;
+  background-color: white;
+  border: solid 3px whitesmoke;
+  border-radius: 3px;
+  height: 360px;
+  width: 236px;
+}
+
+/*Contactos*/
+.contact {
+  background-color: #ffffff;
+  height: 80vh;
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  padding-top: 150px;
+  border-left: solid 3px black;
+  border-right: solid 3px black;
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 33px;
+}
+
+.contact p {
+  padding: 10px;
+  margin: 10px 10px;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Montserrat";
+  font-family: sans-serif;
+  line-height: 1.2;
+}
+
+.contact a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 15px;
+  color: black;
+  margin-left: 22px;
+}
+
+.contact a i {
+  color: red;
+  font-size: 20px;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+.contact form .campo, textarea {
+  width: 100%;
+  height: 30px;
+  padding: 15 10px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: 400;
+  border: solid 1px black;
+  border-radius: 3px;
+  outline: 0px;
+}
+
+.contact form textarea {
+  max-width: 530px;
+  min-width: 530px;
+  max-height: 150px;
+  min-height: 140px;
+}
+
+.contact .btn-enviar {
+  background-color: rgb(245, 131, 2);
+  padding: 10px;
+  font-size: 16px;
+  border: solid 1px rgb(51, 47, 47);
+  border-radius: 3px;
+  outline: 0px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.btn-enviar:hover {
+  background-color: rgb(245, 131, 2);
+  color: white;
+  box-shadow: 0 0 15px rgb(245, 131, 2);
+  box-shadow: 0 0 25px rgb(245, 131, 2);
+}
+
+label {
+  color: black;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/*FAQ*/
+.contenedor {
+  background-color: #C4D7E6;
+  text-align: center;
+  /* height: 80vh; Agregar h min*/
+  min-height: 800px;
+  width: 100%;
+}
+
+.contenedor h2 {
+  padding: 20px;
+  text-align: center;
+}
+
+.faq {
+  padding: 20px;
+}
+
+.faq button {
+  padding: 10px 10px;
+  background-color: rgb(68, 188, 218);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 200px;
+}
+
+/*COMIC y MANGA*/
+/*Centrar El karrusel*/
+.Karrusel-tamaño {
+  width: 500px;
+  height: 700px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.slide {
+  margin-top: 50px;
+}
+
+.slide img {
+  height: 65vh;
+}
+
+/*Merchandaising*/
+/*Footer*/
+footer {
+  background-color: #24252a;
+  /*position: absolute;
+  bottom: 0;*/
+  width: 100%;
+  height: 150px;
+  /* height: 10vh; */
+  /* width: 1880px; */
+  /* display: flex; */
+}
+
+.pie {
+  display: flex;
+  justify-content: space-around;
+  /* padding: 15px; */
+  align-items: center;
+}
+
+p {
+  font-size: 15px;
+}
+
+.logo {
+  /* display: flex; */
+  /* align-items: center; */
+  /* gap: 10px; */
+  height: 7vh;
+}
+
+.logotipo {
+  font-size: 25px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  font-family: "Bruno Ace SC", cursive;
+}
+
+span {
+  font-size: 30px;
+}
+
+i {
+  text-decoration: none;
+  color: white;
+  margin: px;
+  border-radius: 50%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
+  transition: 0.3 ease;
+}
+
+.fa-youtube {
+  background-color: red;
+  padding: 2px;
+  border-radius: 10px;
+  color: white;
+}
+
+.fa-youtube:hover {
+  background-color: red;
+  color: white;
+  box-shadow: 0 0 15px red;
+  box-shadow: 0 0 45px red;
+  box-shadow: 0 0 75px red;
+}
+
+.fa-instagram {
+  background-color: rgb(189, 42, 91);
+  padding: 2px;
+  border-radius: 10px;
+  color: white;
+}
+
+.fa-instagram:hover {
+  background-color: rgb(217, 44, 154);
+  color: white;
+  box-shadow: 0 0 15px rgb(217, 44, 154);
+  box-shadow: 0 0 45px rgb(217, 44, 154);
+  box-shadow: 0 0 75px rgb(217, 44, 154);
+}
+
+.fa-whatsapp {
+  background-color: rgb(37, 187, 37);
+  padding: 2px;
+  border-radius: 10px;
+  color: white;
+}
+
+.fa-whatsapp:hover {
+  background-color: rgb(53, 214, 39);
+  color: white;
+  box-shadow: 0 0 15px rgb(53, 214, 39);
+  box-shadow: 0 0 45px rgb(53, 214, 39);
+  box-shadow: 0 0 75px rgb(53, 214, 39);
+}
+
+.fa-linkedin {
+  background-color: rgb(43, 97, 184);
+  padding: 2px;
+  border-radius: 10px;
+  color: white;
+}
+
+.fa-linkedin:hover {
+  background-color: rgb(28, 70, 177);
+  color: white;
+  box-shadow: 0 0 15px rgb(28, 70, 177);
+  box-shadow: 0 0 45px rgb(28, 70, 177);
+  box-shadow: 0 0 75px rgb(28, 70, 177);
+}
+
+@media screen and (max-width: 1150px) {
+  header {
+    width: 1150px;
+  }
+  .cont-1 {
+    place-content: space-evenly space-evenly;
+    place-items: center center;
+    grid-template-columns: repeat(2, 200px);
+  }
+  footer {
+    width: 1150px;
+  }
+}
+@media screen and (max-width: 1149px) {
+  .contenedor {
+    width: 1150px;
+    /* height: 80vh; */
+  }
+}
+@media screen and (max-width: 480px) {
+  .Karrusel-tamaño {
+    width: 480px;
+  }
+}
+@media screen and (max-width: 319px) {
+  .Karrusel-tamaño {
+    width: 319px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
