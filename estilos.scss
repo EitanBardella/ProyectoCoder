@@ -6,6 +6,12 @@
 
 /*HEADER*/
 
+@mixin media(){
+    @media screen and (max-width:1150px) {
+        @content;
+    }
+}
+
 header{
     background-color: #24252a;
     display: flex;
@@ -17,6 +23,9 @@ header{
     width: 100%;
     /*Cuando agrego el witdht deja de ser responsive , pero cuando lo sacó es responsive solo hasta 1146px y cuando declaro las media querys no me funcionan y no encuentro ni entiendo el porque no funcionan, probe intentando cambiar el color de fondo para ver si funcionaban y nada */
 
+    @include media(){
+        width: 1150px;
+    }
 
     .li{
         font-family: "Montserrat";
@@ -64,12 +73,15 @@ header{
         border-radius: 50px;
         cursor: pointer;
         transition: all 0.3s ease 0s;
-    }
-    button:hover{
-        background-color: rgba(0,136,169,1);
-    }
+        &:hover{
+            background-color: rgba(0,136,169,1);
+        }
+    // }
+    // button:hover{
+    //     background-color: rgba(0,136,169,1);
+    // }
 }
-
+}
 
 
 
@@ -110,13 +122,24 @@ header{
     align-content: space-evenly; */
     place-content: space-evenly space-evenly;
     place-items: center center;
+
+    @include media(){
+        place-content: space-evenly space-evenly;
+        place-items: center center;
+        grid-template-columns: repeat(2, 200px);
+    }
+
     img{
         height: 354px;
         width: 230px;
     }
-    img{
-        height: 354px;
-        width: 230px;
+    .img{
+        box-sizing: border-box;
+        background-color: white;
+        border: solid 3px whitesmoke;
+        border-radius: 3px;
+        height: 360px;
+        width: 236px;
     }
 }
 
@@ -145,8 +168,8 @@ header{
 .contact{
     background-color: #ffffff;
     height: 80vh;
-    width: 1150px;
-    // max-width: 1100px;
+    // width: 1150px;
+    width: 100%;
     margin: auto;
     font-family:Georgia, 'Times New Roman', Times, serif;
 
@@ -154,8 +177,8 @@ header{
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
     padding-top: 150px;
-    border-left:solid 3px black;
-    border-right:solid 3px black;
+    // border-left:solid 3px black;
+    // border-right:solid 3px black;
     h2{
         text-align: center;
         font-size: 33px;
@@ -205,13 +228,18 @@ header{
         outline: 0px;
         cursor: pointer;
         transition: all 300ms ease;
+        &:hover{        
+            background-color:  rgb(245, 131, 2);
+            color: white;
+            box-shadow: 0 0 15px  rgb(245, 131, 2);
+            box-shadow: 0 0 25px  rgb(245, 131, 2) }
     }
-    .btn-enviar:hover{
-        background-color:  rgb(245, 131, 2);
-        color: white;
-        box-shadow: 0 0 15px  rgb(245, 131, 2);
-        box-shadow: 0 0 25px  rgb(245, 131, 2);
-    }
+    // .btn-enviar:hover{
+    //     background-color:  rgb(245, 131, 2);
+    //     color: white;
+    //     box-shadow: 0 0 15px  rgb(245, 131, 2);
+    //     box-shadow: 0 0 25px  rgb(245, 131, 2);
+    // }
     label{
         color: black;
         font-size: 22px;
@@ -252,12 +280,33 @@ header{
 
 /*Centrar El karrusel*/
 
-.Karrusel-tamaño{
+@mixin karrusel(){
+    @media screen and (max-width:480px) {
+        @content;
+    }
+}
+@mixin karrusel-2(){
+    @media screen and (max-width:319px) {
+        @content;
+    }
+}
+.bloque{
+    @include karrusel(){
+        height: 100%;
+    }
+    .Karrusel-tamaño{
     width: 500px;
     height: 700px;
     /* display: flex;
     justify-content: center;
     align-items: center; */
+    @include karrusel(){
+        width: 480px;
+    }
+    @include karrusel-2(){
+        width: 319px;
+    }
+    }
     .slide{
         margin-top: 50px;
     }
@@ -285,6 +334,10 @@ footer{
     /* height: 10vh; */
     /* width: 1880px; */
     /* display: flex; */
+
+    @include media(){
+        width: 1150px;
+    }
 
     .pie{
         display: flex;
@@ -324,14 +377,13 @@ footer{
         padding: 2px;
         border-radius: 10px;
         color: white;
-    }
-    
-    .fa-youtube:hover{
-        background-color: red;
-        color: white;
-        box-shadow: 0 0 15px red;
-        box-shadow: 0 0 45px red;
-        box-shadow: 0 0 75px red;
+        &:hover{
+            background-color: red;
+            color: white;
+            box-shadow: 0 0 15px red;
+            box-shadow: 0 0 45px red;
+            box-shadow: 0 0 75px red;
+        }
     }
     
     .fa-instagram{
@@ -339,80 +391,45 @@ footer{
         padding: 2px;
         border-radius: 10px;
         color: white;
+        &:hover{
+            background-color: rgb(217, 44, 154);
+            color: white;
+            box-shadow: 0 0 15px rgb(217, 44, 154);
+            box-shadow: 0 0 45px rgb(217, 44, 154);
+            box-shadow: 0 0 75px rgb(217, 44, 154);
+        }
     }
     
-    .fa-instagram:hover{
-        background-color: rgb(217, 44, 154);
-        color: white;
-        box-shadow: 0 0 15px rgb(217, 44, 154);
-        box-shadow: 0 0 45px rgb(217, 44, 154);
-        box-shadow: 0 0 75px rgb(217, 44, 154);
-    }
     
     .fa-whatsapp{
         background-color: rgb(37, 187, 37);
         padding: 2px;
         border-radius: 10px;
         color: white;
+        &:hover{
+            background-color: rgb(53, 214, 39);
+            color: white;
+            box-shadow: 0 0 15px rgb(53, 214, 39);
+            box-shadow: 0 0 45px rgb(53, 214, 39);
+            box-shadow: 0 0 75px rgb(53, 214, 39);
+        }
     }
     
-    .fa-whatsapp:hover{
-        background-color: rgb(53, 214, 39);
-        color: white;
-        box-shadow: 0 0 15px rgb(53, 214, 39);
-        box-shadow: 0 0 45px rgb(53, 214, 39);
-        box-shadow: 0 0 75px rgb(53, 214, 39);
-    }
     
     .fa-linkedin{
         background-color: rgb(43, 97, 184);
         padding: 2px;
         border-radius: 10px;
         color: white;
-    }
-    
-    .fa-linkedin:hover{
-        background-color: rgb(28, 70, 177);
-        color: white;
-        box-shadow: 0 0 15px rgb(28, 70, 177);
-        box-shadow: 0 0 45px rgb(28, 70, 177);
-        box-shadow: 0 0 75px rgb(28, 70, 177);
-    }
-    
-}
-
-
-
-
-
-
-@media screen and (max-width: 1150px) {
-    header{
-        width: 1150px;
+        &:hover{
+            background-color: rgb(28, 70, 177);
+            color: white;
+            box-shadow: 0 0 15px rgb(28, 70, 177);
+            box-shadow: 0 0 45px rgb(28, 70, 177);
+            box-shadow: 0 0 75px rgb(28, 70, 177);
         }
-    .cont-1{
-        place-content: space-evenly space-evenly;
-        place-items: center center;
-        grid-template-columns: repeat(2, 200px);
     }
     
-    .contact{
-        place-content: space-evenly space-evenly;
-        place-items: center center;
-        grid-template-columns: repeat(2, 200px);
-    }
-
-    footer{
-        width: 1150px;
-    }
-    }
-
-
-@media screen and (max-width:1149px) {
-    .contenedor{
-        width: 1150px;
-        /* height: 80vh; */
-    }
 }
 
 
@@ -420,14 +437,15 @@ footer{
 
 
 
-@media screen and (max-width:480px) {
-    .Karrusel-tamaño{
-        width: 480px;
-    }
-}
 
-@media screen and (max-width:319px) {
-    .Karrusel-tamaño{
-        width: 319px;
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
