@@ -9,15 +9,13 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* padding: 30px 10%; */
-  /* height: 10vh; */
-  height: 150px;
-  width: 100%;
-  /*Cuando agrego el witdht deja de ser responsive , pero cuando lo sacó es responsive solo hasta 1146px y cuando declaro las media querys no me funcionan y no encuentro ni entiendo el porque no funcionan, probe intentando cambiar el color de fondo para ver si funcionaban y nada */
+  min-height: 125px;
+
+  
 }
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 520px) {
   header {
-    width: 1150px;
+    flex-direction: column;
   }
 }
 header .li {
@@ -41,6 +39,11 @@ header .logo {
 }
 header .nav_links {
   list-style: none;
+}
+@media screen and (max-width: 520px) {
+  header nav {
+    padding: 10px 5px;
+  }
 }
 header .nav_links li {
   display: inline-block;
@@ -93,7 +96,7 @@ header button:hover {
   place-content: space-evenly space-evenly;
   place-items: center center;
 }
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 780px) {
   .cont-1 {
     place-content: space-evenly space-evenly;
     place-items: center center;
@@ -307,22 +310,21 @@ footer {
   background-color: #24252a;
   /*position: absolute;
   bottom: 0;*/
-  width: 100%;
-  height: 150px;
+  min-height: 125px;
   /* height: 10vh; */
   /* width: 1880px; */
   /* display: flex; */
-}
-@media screen and (max-width: 1150px) {
-  footer {
-    width: 1150px;
-  }
 }
 footer .pie {
   display: flex;
   justify-content: space-around;
   /* padding: 15px; */
   align-items: center;
+}
+@media screen and (max-width: 780px) {
+  footer .pie {
+    flex-direction: column;
+  }
 }
 footer .logo {
   /* display: flex; */
