@@ -14,13 +14,13 @@ header {
   align-items: center;
   min-height: 125px;
 }
-@media screen and (max-width: 368px) {
+@media screen and (max-width: 550px) {
   header {
     width: 100%;
     flex-direction: column;
   }
 }
-@media screen and (max-width: 368px) {
+@media screen and (max-width: 550px) {
   header nav {
     padding: 5 5px;
   }
@@ -80,7 +80,7 @@ header button:hover {
   box-shadow: 0 0 45px #0088a9;
   box-shadow: 0 0 75px #0088a9;
 }
-@media screen and (max-width: 368px) {
+@media screen and (max-width: 550px) {
   header button {
     padding: 5px;
     font-size: 16px;
@@ -111,7 +111,34 @@ header button:hover {
   place-content: space-evenly space-evenly;
   place-items: center center;
 }
-@media screen and (max-width: 368px) {
+@media screen and (max-width: 1150px) {
+  .cont-1 {
+    place-content: space-evenly space-evenly;
+    place-items: center center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 900px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .cont-1 {
+    place-content: space-evenly space-evenly;
+    place-items: center center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 550px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .cont-1 {
+    place-content: space-evenly space-evenly;
+    place-items: center center;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    width: 400px;
+  }
+}
+@media screen and (max-width: 550px) {
   .cont-1 {
     place-content: space-evenly space-evenly;
     place-items: center center;
@@ -353,7 +380,7 @@ footer {
   /* padding: 15px; */
   align-items: center;
 }
-@media screen and (max-width: 368px) {
+@media screen and (max-width: 550px) {
   footer {
     flex-direction: column;
     padding: 5px;
