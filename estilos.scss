@@ -5,29 +5,28 @@
 }
 
 /*HEADER*/
-
-@mixin media(){
-    @media screen and (max-width:1150px) {
+@mixin header(){
+    @media screen and (max-width:520px) {
         @content;
     }
 }
 
-header{
+/*HEADER*/
+header {
     background-color: #24252a;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* padding: 30px 10%; */
-    /* height: 10vh; */
-    height: 150px;
-    width: 100%;
-    /*Cuando agrego el witdht deja de ser responsive , pero cuando lo sacó es responsive solo hasta 1146px y cuando declaro las media querys no me funcionan y no encuentro ni entiendo el porque no funcionan, probe intentando cambiar el color de fondo para ver si funcionaban y nada */
-
-    @include media(){
-        width: 1150px;
+    min-height: 125px;
+    @include header(){
+        flex-direction: column;
     }
-
-    .li{
+    nav{
+        @include header(){
+            padding: 10 5px;
+        }
+    }
+    .li {
         font-family: "Montserrat";
         font-family: sans-serif;
         font-weight: 500;
@@ -35,7 +34,7 @@ header{
         color: #edf0f1;
         text-decoration: none;
     }
-    .avegacion{
+    .avegacion {
         font-family: "Montserrat";
         font-family: sans-serif;
         font-weight: 500;
@@ -43,22 +42,23 @@ header{
         color: #edf0f1;
         text-decoration: none;
     }
-    .logo{
+    .logo {
         cursor: pointer;
     }
-
-    .nav_links{
+    .nav_links {
         list-style: none;
+        li {
+            display: inline-block;
+            padding: 0 20px;
+            a{
+                color: #0088a9;
+                &:hover{
+                    color: #0088a9;
+                }
+            }
+        }
     }
-
-    .nav_links li{
-        display: inline-block;
-        padding: 0 20px;
-    }
-    .nav_links li a:hover{
-        color: #0088a9;
-    }
-    .cta{
+    .cta {
         font-family: "Montserrat";
         font-family: sans-serif;
         font-weight: 500;
@@ -66,22 +66,35 @@ header{
         color: #edf0f1;
         text-decoration: none;
     }
-    button{
+    button {
         padding: 9px 25px;
-        background-color: rgba(0,136,169,1);
+        background-color: rgb(0, 136, 169);
         border: none;
         border-radius: 50px;
         cursor: pointer;
         transition: all 0.3s ease 0s;
         &:hover{
-            background-color: rgba(0,136,169,1);
+            background-color: rgb(0, 136, 169);
         }
-    // }
-    // button:hover{
-    //     background-color: rgba(0,136,169,1);
-    // }
+        @include header(){
+            padding: 5px;
+        }
+    }
 }
-}
+
+
+  @media screen and (max-width:520px) {
+    header{
+      flex-direction: column;
+    }
+    nav{
+      padding: 10 5px;
+    }
+    header button{
+      padding-top: 5px;
+    }
+  }
+
 
 
 
@@ -362,21 +375,20 @@ footer{
     background-color: #24252a;
     /*position: absolute;
     bottom: 0;*/
-    width: 100%;
-    height: 150px;
+    min-height: 125px;
     /* height: 10vh; */
     /* width: 1880px; */
     /* display: flex; */
 
-    @include media(){
-        width: 1150px;
-    }
 
     .pie{
         display: flex;
         justify-content: space-around;
         /* padding: 15px; */
         align-items: center;
+        @include media(){
+            flex-direction: column;
+        }
     }
     .logo{
         /* display: flex; */
