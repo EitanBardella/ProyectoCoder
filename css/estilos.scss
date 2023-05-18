@@ -362,16 +362,15 @@ footer{
     /* height: 10vh; */
     /* width: 1880px; */
     /* display: flex; */
-
-    .pie{
-        display: flex;
-        justify-content: space-around;
-        /* padding: 15px; */
-        align-items: center;
-        @include header(){
-            flex-direction: column;
-        }
+    display: flex;
+    justify-content: space-around;
+    /* padding: 15px; */
+    align-items: center;
+    @include header(){
+        flex-direction: column;
+        padding: 5px;
     }
+
     .logo{
         /* display: flex; */
         /* align-items: center; */
@@ -392,7 +391,6 @@ footer{
         font-size: 30px;
     }
     i{
-
         text-decoration: none; color: white;
         margin: px;
         border-radius: 50%;

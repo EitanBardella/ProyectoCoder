@@ -325,16 +325,15 @@ footer {
   /* height: 10vh; */
   /* width: 1880px; */
   /* display: flex; */
-}
-footer .pie {
   display: flex;
   justify-content: space-around;
   /* padding: 15px; */
   align-items: center;
 }
 @media screen and (max-width: 368px) {
-  footer .pie {
+  footer {
     flex-direction: column;
+    padding: 5px;
   }
 }
 footer .logo {
