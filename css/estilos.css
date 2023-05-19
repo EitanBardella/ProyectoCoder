@@ -175,6 +175,8 @@ header button:hover {
 /*Contactos*/
 .contact {
   font-family: "Quicksand", sans-serif;
+  background-image: url(../img/berserk3.jpg);
+  background-size: cover;
   background-color: rgb(8, 8, 8);
   color: white;
   padding: 0 24px;
@@ -190,7 +192,7 @@ header button:hover {
   font-size: 48px;
 }
 .contact .LC span {
-  color: #b70e21;
+  color: #d63031;
 }
 .contact .contact-wrapper {
   box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
@@ -224,7 +226,7 @@ header button:hover {
   padding: 0.7em;
   border: none;
   background: none;
-  border-bottom: 1px solid #d63031;
+  border-bottom: 1px solid #7c0c0c;
   outline: none;
   color: #050505;
   background-color: red;
