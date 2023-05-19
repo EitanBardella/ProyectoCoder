@@ -379,6 +379,11 @@ header {
         @content;
     }
 }
+@mixin karrusel2(){
+    @media screen and (max-width:546px) {
+        @content;
+    }
+}
 
 .bloque{
     @include karrusel(){
@@ -390,6 +395,9 @@ header {
     /* display: flex;
     justify-content: center;
     align-items: center; */
+    @include karrusel2(){
+        width: 400px;
+    }
     @include karrusel(){
         width: 360px;
     }

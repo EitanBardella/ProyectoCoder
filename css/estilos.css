@@ -350,6 +350,11 @@ header button:hover {
   justify-content: center;
   align-items: center; */
 }
+@media screen and (max-width: 546px) {
+  .bloque .Karrusel-tamaño {
+    width: 400px;
+  }
+}
 @media screen and (max-width: 368px) {
   .bloque .Karrusel-tamaño {
     width: 360px;
