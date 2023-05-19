@@ -338,6 +338,10 @@ header button:hover {
 
 /*COMIC y MANGA*/
 /*Centrar El karrusel*/
+.bloque {
+  display: flex;
+  justify-content: center;
+}
 @media screen and (max-width: 368px) {
   .bloque {
     height: 100%;

@@ -386,6 +386,8 @@ header {
 }
 
 .bloque{
+    display: flex;
+    justify-content: center;
     @include karrusel(){
         height: 100%;
     }
