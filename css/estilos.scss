@@ -15,16 +15,18 @@
         @content;
     }
 }
+@mixin headeru(){
+    @media screen and (max-width:680px) {
+        @content;
+    }
+}
 @mixin header(){
     @media screen and (max-width:550px) {
         @content;
     }
 }
-@mixin headeru(){
-    @media screen and (max-width:550px) {
-        @content;
-    }
-}
+
+
 
 /*HEADER*/
 header {
@@ -33,6 +35,9 @@ header {
     justify-content: space-around;
     align-items: center;
     min-height: 125px;
+    @include headeru(){
+        flex-direction: column;
+    }
     @include header(){
         width: 100%;
         flex-direction: column;
@@ -159,7 +164,7 @@ header {
         gap: 10px;
         width: 400px;
     }
-    @include headeru(){
+    @include header(){
         place-content: space-evenly space-evenly;
         place-items: center center;
         grid-template-columns: repeat(1, 1fr);
