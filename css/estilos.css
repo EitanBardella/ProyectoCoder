@@ -318,6 +318,26 @@ header button:hover {
     text-align: left;
   }
 }
+.contact .navct {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact .navct li {
+  display: inline-block;
+  margin-top: 10px;
+}
+.contact .navct li a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  padding: 5px;
+  font-weight: 500;
+  transition: all 0.3s ease 0s;
+}
+.contact .navct li a:hover {
+  color: darkred;
+}
 
 /*FAQ*/
 .contenedor {

@@ -346,6 +346,27 @@ header {
             }
         }
     }
+    .navct{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        li{
+            display: inline-block;
+            margin-top: 10px;
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: 40px;
+                padding: 5px;
+                font-weight: 550;
+                transition: all 0.3s ease 0s;
+                &:hover{
+                    color: darkred;
+                }
+            }
+        }
+        
+    }
 }
 
 
