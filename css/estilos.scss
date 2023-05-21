@@ -347,6 +347,7 @@ header {
         }
     }
     .navct{
+        grid-column: -3/-1;
         display: flex;
         justify-content: space-around;
         align-items: center;
