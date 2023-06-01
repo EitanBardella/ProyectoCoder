@@ -158,7 +158,7 @@ header button:hover {
 /*Contactos*/
 .contact {
   font-family: "Quicksand", sans-serif;
-  background-image: url(../img/berserk3.jpg);
+  background-image: url(../img/berserk3.webp);
   background-size: cover;
   background-color: rgb(8, 8, 8);
   color: white;
@@ -354,7 +354,7 @@ header button:hover {
 }
 @media screen and (max-width: 460px) {
   .contenedor {
-    background-image: url(../img/vagabonph.jpg);
+    background-image: url(../img/vagabonph.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
